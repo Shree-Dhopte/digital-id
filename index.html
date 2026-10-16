@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital  Card | xyz</title>
+
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Link External CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MOBILE CARD COMPONENT -->
+<main class="id-card">
+    
+    <!-- Header -->
+    <header class="card-header">
+<div class="brand-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 7v5l3 3"/>
+        </svg>
+        <span>xyz</span>
+    </div>
+
+    <div class="verified-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+        </svg>
+        <span>Verified Profile</span>
+    </div>
+    </header>
+
+    <!-- Profile Area -->
+    <section class="profile-section">
+    <div class="avatar-wrapper">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Profile Photo">
+    </div>
+    <h1 class="user-name">Employee1</h1>
+    <p class="user-role">xyz</p>
+    </section>
+
+    <!-- Action Buttons -->
+    <section class="action-buttons">
+    <button class="btn btn-primary" onclick="downloadVCard()">Save to Phone</button>
+    <button class="btn btn-secondary" onclick="shareProfile()">Share Profile</button>
+    </section>
+
+    <!-- About & Social Box -->
+    <section class="details-box">
+    <div class="details-title">About Me</div>
+    <p class="details-text">
+        Helping businesses grow with smart change and high-performance digital solutions.
+    </p>
+
+    <!-- Contact Links -->
+    <div class="social-links">
+        <a href="https://linkedin.com" target="_blank" class="icon-link" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/></svg>
+        </a>
+
+        <a href="https://wa.me/919999999999" target="_blank" class="icon-link" title="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+        </a>
+
+        <a href="mailto:xyz@example.com" class="icon-link" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+
+        <a href="tel:+919999999999" class="icon-link" title="Call">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+    </div>
+    </section>
+
+    <!-- Stats -->
+    <footer class="stats-row">
+    <div class="stat-card">
+        <div class="stat-number">12+</div>
+        <div class="stat-label">Yrs Exp</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Clients</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">25+</div>
+        <div class="stat-label">Partners</div>
+    </div>
+    </footer>
+
+</main>
+
+<!-- Link External JS -->
+<script src="script.js"></script>
+</body>
+</html>
