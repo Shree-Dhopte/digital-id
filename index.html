@@ -1,102 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital  Card | xyz</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Digital ID</title>
 
-<!-- Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 
-<!-- Link External CSS -->
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Social media icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
 
-<!-- MOBILE CARD COMPONENT -->
-<main class="id-card">
-    
-    <!-- Header -->
-    <header class="card-header">
-<div class="brand-logo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="9"/>
-        <path d="M12 7v5l3 3"/>
-        </svg>
-        <span>xyz</span>
-    </div>
+  <body>
+    <div class="card">
+      <div class="top">
+        <h3><b id="brandInitials">SB</b><span>.</span></h3>
+        <p>DIGITAL ID</p>
+      </div>
 
-    <div class="verified-badge">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-        </svg>
-        <span>Verified Profile</span>
-    </div>
-    </header>
+      <div class="profile">
+        <img
+          src="assets\WhatsApp Image 2026-10-17 at 14.59.35.jpeg"
+          alt="Uravi Holidays Profile"
+          id="profileImage"
+        />
+      </div>
 
-    <!-- Profile Area -->
-    <section class="profile-section">
-    <div class="avatar-wrapper">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Profile Photo">
-    </div>
-    <h1 class="user-name">Employee1</h1>
-    <p class="user-role">xyz</p>
-    </section>
+      <h1 id="profileName">Uravi Holidays</h1>
+      <p class="role">Your Trusted Travel Partner</p>
 
-    <!-- Action Buttons -->
-    <section class="action-buttons">
-    <button class="btn btn-primary" onclick="downloadVCard()">Save to Phone</button>
-    <button class="btn btn-secondary" onclick="shareProfile()">Share Profile</button>
-    </section>
+      <p class="bio">
+        Your trusted partner for unforgettable journeys! Explore the world with
+        hassle-free travel and amazing holiday packages.
+      </p>
 
-    <!-- About & Social Box -->
-    <section class="details-box">
-    <div class="details-title">About Me</div>
-    <p class="details-text">
-        Helping businesses grow with smart change and high-performance digital solutions.
-    </p>
+      <div class="line"></div>
 
-    <!-- Contact Links -->
-    <div class="social-links">
-        <a href="https://linkedin.com" target="_blank" class="icon-link" title="LinkedIn">
-        <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/></svg>
+      <!-- Four Circular Social Logos -->
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/uraviholidays?vrfl=b2t5bHQ3NGZpOXEz"
+          class="social-link instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
         </a>
 
-        <a href="https://wa.me/919999999999" target="_blank" class="icon-link" title="WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+        <a
+          href="https://www.facebook.com/YOUR-PROFILE"
+          class="social-link facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
         </a>
 
-        <a href="mailto:xyz@example.com" class="icon-link" title="Email">
-        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <a
+          href="https://linkedin.com/"
+          class="social-link linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
         </a>
 
-        <a href="tel:+919999999999" class="icon-link" title="Call">
-        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <a
+          href="#"
+          id="whatsappLink"
+          class="social-link whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
         </a>
-    </div>
-    </section>
+      </div>
 
-    <!-- Stats -->
-    <footer class="stats-row">
-    <div class="stat-card">
-        <div class="stat-number">12+</div>
-        <div class="stat-label">Yrs Exp</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-number">500+</div>
-        <div class="stat-label">Clients</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-number">25+</div>
-        <div class="stat-label">Partners</div>
-    </div>
-    </footer>
+      <!-- Two Rectangular Buttons -->
+      <div class="action-buttons">
+        <a href="tel:+91 8766043591" class="action-btn save-btn">
+          <i class="fa-solid fa-phone"></i>
+          Call Now
+        </a>
 
-</main>
+        <button
+          type="button"
+          class="action-btn location-btn"
+          onclick="getLocation()"
+        >
+          <i class="fa-solid fa-location-dot"></i>
+          Get Location
+        </button>
+        <a href="#feedback" class="action-btn feedback-jump">
+          <i class="fa-solid fa-star"></i>
+          Give Feedback
+        </a>
+      </div>
 
-<!-- Link External JS -->
-<script src="script.js"></script>
-</body>
+      <!-- Location Status -->
+      <p id="locationStatus">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Uravi+Holidays"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📍 Open Uravi Holidays in Google Maps
+        </a>
+      </p>
+      <!-- About Me -->
+      <div class="about-me">
+        <h3>About Me</h3>
+        <p>
+          Make every journey memorable with Uravi Holidays! From exciting
+          holiday packages to hassle-free travel planning, we help you explore
+          the world with comfort, care, and confidence. Your dream destination
+          is just one trip away! 📞 Contact us today and let your journey begin!
+        </p>
+      </div>
+
+      <!-- Three Info Boxes -->
+      <div class="info-boxes">
+        <div class="info-box">
+          <h2>✨</h2>
+          <p class="info-number">6+ month</p>
+          <p class="info-label">Experience</p>
+        </div>
+
+        <div class="info-box">
+          <h2>👥</h2>
+          <p class="info-number">100+</p>
+          <p class="info-label">Clients</p>
+        </div>
+
+        <div class="info-box smile-box">
+          <h2>😊</h2>
+          <p class="info-number">Stay Positive</p>
+          <p class="info-label">Keep Smiling</p>
+        </div>
+      </div>
+
+      <!-- Customer Feedback and Reviews -->
+      <section class="feedback-section" id="feedback">
+        <div class="feedback-heading">
+          <span class="feedback-eyebrow">YOUR EXPERIENCE MATTERS</span>
+          <h2>Share Your Experience</h2>
+          <p>Help us make your next journey even better.</p>
+        </div>
+
+        <form id="feedbackForm">
+          <div class="rating-label">How was your experience?</div>
+          <div class="star-rating" role="radiogroup" aria-label="Rate your experience">
+            <button type="button" class="star" data-rating="1" aria-label="1 star" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="2" aria-label="2 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="3" aria-label="3 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="4" aria-label="4 stars" aria-pressed="false">★</button>
+            <button type="button" class="star" data-rating="5" aria-label="5 stars" aria-pressed="false">★</button>
+          </div>
+          <p id="ratingHint" class="rating-hint">Tap a star to rate us</p>
+
+          <div class="suggestion-group">
+            <div class="rating-label">What did you like?</div>
+            <div class="suggestion-chips">
+              <label class="suggestion-chip"><input type="checkbox" name="positive" value="friendly and helpful service"><span>😊 Friendly service</span></label>
+              <label class="suggestion-chip"><input type="checkbox" name="positive" value="smooth travel planning"><span>🧭 Smooth planning</span></label>
+              <label class="suggestion-chip"><input type="checkbox" name="positive" value="great holiday packages"><span>🌴 Great packages</span></label>
+              <label class="suggestion-chip"><input type="checkbox" name="positive" value="quick responses"><span>⚡ Quick responses</span></label>
+              <label class="suggestion-chip"><input type="checkbox" name="positive" value="good value for money"><span>💰 Good value</span></label>
+              <label class="suggestion-chip"><input type="checkbox" name="positive" value="clear communication"><span>💬 Clear communication</span></label>
+            </div>
+          </div>
+
+          <div class="suggestion-group">
+            <div class="rating-label">What could we improve? <span class="optional">(optional)</span></div>
+            <div class="suggestion-chips">
+              <label class="suggestion-chip improvement"><input type="checkbox" name="improvement" value="more package options"><span>🗺️ More options</span></label>
+              <label class="suggestion-chip improvement"><input type="checkbox" name="improvement" value="faster responses"><span>⏱️ Faster replies</span></label>
+              <label class="suggestion-chip improvement"><input type="checkbox" name="improvement" value="more detailed information"><span>📋 More details</span></label>
+              <label class="suggestion-chip improvement"><input type="checkbox" name="improvement" value="more budget-friendly choices"><span>🏷️ Budget choices</span></label>
+            </div>
+          </div>
+
+          <label class="review-label" for="reviewText">Your review</label>
+          <textarea id="reviewText" rows="4" maxlength="600" placeholder="Select suggestions above to build your review, or write your own..." required></textarea>
+          <label class="review-label" for="reviewerName">Your name <span class="optional">(optional)</span></label>
+          <input id="reviewerName" type="text" maxlength="60" placeholder="Enter your name" />
+          <button class="submit-review" type="submit">Submit Feedback <span aria-hidden="true">→</span></button>
+          <p id="feedbackStatus" class="feedback-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="recent-feedback">
+          <div class="recent-heading">
+            <h3>Recent Feedback</h3>
+            <span class="local-note">Saved on this device</span>
+          </div>
+          <div id="reviewList" class="review-list">
+            <p class="empty-reviews">Your feedback will appear here after submission.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
